@@ -12,8 +12,8 @@ namespace Tyuiu.ElizarovKI.Sprint4.Task5.V25.Lib
     {
         public int Calculate(int[,] matrix)
         {
-            int rows = matrix.GetUpperBound(0) + 1;
-            int columns = matrix.Length / rows;
+            int rows = matrix.GetLength(1);
+            int columns = matrix.GetLength(0);
 
             int count = 0;
 
